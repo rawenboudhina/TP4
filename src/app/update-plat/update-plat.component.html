@@ -18,9 +18,17 @@
     <div class="col-sm-4 col-md-4 col-lg-4">
     <label >Date création</label>
     <input type="date" [ngModel]="currentPlat.dateCreation | date: 'yyyy-MM-dd'"(ngModelChange)=" currentPlat.dateCreation= $event" name="dateCreation"
- class="form-control">
-
+      class="form-control">
     </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label>Style de cuisine</label>
+      <select class="form-control form-control-lg" id="idstyle" name="idstyle"
+      [(ngModel)]="updatedstyleId">
+      <option *ngFor="let style of styledecuisines" [value]="style.idstyle" >
+      {{style.nomstyle}}
+      </option>
+      </select>
+      </div>
     <div class="mt-2">
     <button type="submit" (click)="updatePlat()"class="btn btn-success" >Modifier</button>
     </div>

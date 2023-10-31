@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute,Router } from '@angular/router';
 import { PlatService } from '../services/plat.service';
 import { Plat } from '../model/plat.model';
+import { stylecuisine } from '../model/stylecuisine.model';
 
 @Component({
   selector: 'app-update-plat',
@@ -9,16 +10,21 @@ import { Plat } from '../model/plat.model';
 })
 export class UpdatePlatComponent {
   currentPlat=new Plat();
+  styledecuisines! : stylecuisine[];
+  updatedstyleId! : number;
+
   constructor(private activatedRoute: ActivatedRoute,
     private router :Router,
     private platService: PlatService){}
     ngOnInit() {
-      console.log(this.activatedRoute.snapshot.params['id']);
+      //console.log(this.activatedRoute.snapshot.params['id']);
       this.currentPlat = this.platService.consulterPlat(this.activatedRoute.snapshot. params['id']);
-      console.log(this.currentPlat);
+      this.styledecuisines=this.platService.listestylecuisines();
+      this.updatedstyleId=this.currentPlat.stylecuisine.idstyle;
+      //console.log(this.currentPlat);
 }
 updatePlat(){
-
+    this.currentPlat.stylecuisine=this.platService.consulterstylecuisine(this.updatedstyleId);
   //console.log(this.currentPlat);
   this.platService.updatePlat(this.currentPlat);
   this.router.navigate(['plats']);
