@@ -57,11 +57,13 @@ trierPlats(){
   return 0;
   });
   }
+
   listestylecuisines():stylecuisine[] {
     return this.stylecuisines;
     }
   consulterstylecuisine(id:number): stylecuisine{ 
     return this.stylecuisines.find(style => style.idstyle == id)!;
     }
+
       
 }

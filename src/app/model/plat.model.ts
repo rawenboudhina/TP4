@@ -1,5 +1,5 @@
-import { stylecuisine } from "./stylecuisine.model";
 
+import { stylecuisine } from "./stylecuisine.model";
 export class Plat {
     idPlat? : number;
     nomPlat? : string;
