@@ -1,4 +1,4 @@
-export class stylecuisine {
+export class Stylecuisine {
     idstyle! : number; 
     nomstyle! : string;
     }

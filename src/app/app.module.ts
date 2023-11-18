@@ -7,18 +7,24 @@ import { PlatsComponent } from './plats/plats.component';
 import { AddPlatComponent } from './add-plat/add-plat.component';
 import { FormsModule } from '@angular/forms';
 import { UpdatePlatComponent } from './update-plat/update-plat.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { ForbiddenComponent } from './forbidden/forbidden.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlatsComponent,
     AddPlatComponent,
-    UpdatePlatComponent
+    UpdatePlatComponent,
+    LoginComponent,
+    ForbiddenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
