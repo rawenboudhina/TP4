@@ -1,26 +1,31 @@
 import { Injectable } from '@angular/core';
 import { Plat } from '../model/plat.model';
-import { stylecuisine } from '../model/stylecuisine.model';
+import { Stylecuisine} from '../model/stylecuisine.model';
+import { Observable } from 'rxjs';
+/* import { HttpClient, HttpHeaders } from '@angular/common/http';
+const httpOptions = {
+
+  headers: new HttpHeaders( {'Content-Type': 'application/json'} )}; */
 
 @Injectable({
   providedIn: 'root'
 })
 export class PlatService {
   plat! : Plat;
-
   plats :Plat[];
-  stylecuisines! :stylecuisine[];
+  stylecuisines! :Stylecuisine[];
+ // apiURL: string = 'http://localhost:8080/produits/api';
 
   constructor() { 
-    this.stylecuisines=[ {idstyle : 1, nomstyle : "tunisienne"},
-    {idstyle : 2, nomstyle : "italienne"}]
+  this.stylecuisines=[ {idstyle : 1, nomstyle : "tunisienne"},
+    {idstyle : 2, nomstyle : "italienne"}] 
     this.plats = [
     {idPlat : 1, nomPlat : "SPAGHETTI", prixPlat : 30000, dateCreation : new Date("01/14/2011"),
         stylecuisine:{idstyle : 2, nomstyle : "italienne"}},
     {idPlat : 2, nomPlat : "PIZZA", prixPlat : 40000, dateCreation : new Date("01/14/2011"),stylecuisine:{idstyle : 2, nomstyle : "italienne"}},
     {idPlat : 3, nomPlat : "COUSCOUS", prixPlat : 27500, dateCreation : new Date("01/14/2011"),stylecuisine:{idstyle : 1, nomstyle : "tunisienne"}},
     {idPlat : 4, nomPlat : "TAGLIATELLI", prixPlat :55000, dateCreation : new Date("01/14/2011"),stylecuisine:{idstyle : 2, nomstyle : "italienne"}},
-     ];
+  ];  
   }
   listePlats():Plat[] {
     return this.plats;
@@ -57,13 +62,10 @@ trierPlats(){
   return 0;
   });
   }
-
-  listestylecuisines():stylecuisine[] {
+listestylecuisines():Stylecuisine[] {
     return this.stylecuisines;
-    }
-  consulterstylecuisine(id:number): stylecuisine{ 
+    } 
+  consulterstylecuisine(id:number): Stylecuisine{ 
     return this.stylecuisines.find(style => style.idstyle == id)!;
-    }
-
-      
-}
+    } 
+  }

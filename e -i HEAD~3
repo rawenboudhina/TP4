@@ -1,0 +1,36 @@
+[33mcommit e0eb3f9e0dff468ea3fd93994f5389f120f07036[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 738e01f c064ed3
+Author: RAWEN <boudhinarawen8@gmail.com>
+Date:   Wed Nov 1 00:30:51 2023 +0100
+
+    devoir 6 sur mon entité: restaurant
+
+[33mcommit 738e01f1165cf9c9b509fefa9a15f3067b60c6e0[m
+Author: RAWEN <boudhinarawen8@gmail.com>
+Date:   Tue Oct 31 23:41:25 2023 +0100
+
+    devoir 6
+
+[33mcommit 982d0a1201b13717c6be7400b91ec06d98712501[m
+Author: RAWEN <boudhinarawen8@gmail.com>
+Date:   Wed Oct 25 22:17:04 2023 +0100
+
+    TP4 projet angular
+
+[33mcommit c064ed31f49565257d3d56df06250016c3a2f392[m
+Author: RAWEN <boudhinarawen8@gmail.com>
+Date:   Wed Oct 25 22:17:04 2023 +0100
+
+    Ajout des répertoires manquants
+
+[33mcommit 34d61b79cb5d72df5391d021f1efcd6822274366[m
+Author: RAWEN <boudhinarawen8@gmail.com>
+Date:   Wed Oct 25 22:08:20 2023 +0100
+
+    Mettre à jour les styles de fin de ligne
+
+[33mcommit 30a645f9ef9938c2cf72fda767163acf13603b07[m
+Author: RAWEN <boudhinarawen8@gmail.com>
+Date:   Wed Oct 25 15:59:49 2023 +0100
+
+    initial commit
