@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Plat } from '../model/plat.model';
 import { Stylecuisine} from '../model/stylecuisine.model';
 import { Observable } from 'rxjs';
+import { of } from 'rxjs';
+
 /* import { HttpClient, HttpHeaders } from '@angular/common/http';
 const httpOptions = {
 
@@ -68,4 +70,12 @@ listestylecuisines():Stylecuisine[] {
   consulterstylecuisine(id:number): Stylecuisine{ 
     return this.stylecuisines.find(style => style.idstyle == id)!;
     } 
+    /* rechercherParCategorie(idstyle: number): Observable<Plat[]> {
+      const platsFiltres = this.plats.filter(plat => plat.stylecuisine.idstyle === idstyle);
+      return of(platsFiltres);*/
+        rechercherParStyle(idstyle: number): Plat[] {
+    const filtredPlat=this.plats.filter((plat) => this.plat.stylecuisine.idstyle == idstyle);
+    return filtredPlat;
   }
+    } 
+  

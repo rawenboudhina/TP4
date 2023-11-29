@@ -6,13 +6,16 @@ import { UpdatePlatComponent } from './update-plat/update-plat.component';
 import { LoginComponent } from './login/login.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { PlatGuard} from './plat.guard';
-
+import { RechercheParStyleComponent } from './recherche-par-style/recherche-par-style.component';
+import { RechercheParNomComponent } from './recherche-par-nom/recherche-par-nom.component';
 
 const routes: Routes = [{path: "plats" ,component:PlatsComponent},
 {path: "add-plat",component:AddPlatComponent,canActivate:[PlatGuard]},
 {path: "updatePlat/:id", component: UpdatePlatComponent},
 {path: 'login', component: LoginComponent},
 {path: 'forbidden', component : ForbiddenComponent},
+{path: 'rechercheParStyle', component : RechercheParStyleComponent},
+{path: 'rechercheParNOM', component : RechercheParNomComponent},
 { path: "", redirectTo: "plats", pathMatch: "full" },
 
 
