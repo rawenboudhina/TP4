@@ -6,6 +6,7 @@ import { UpdatePlatComponent } from './update-plat/update-plat.component';
 import { LoginComponent } from './login/login.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { PlatGuard} from './plat.guard';
+import { RechercheParStyleComponent } from './recherche-par-style/recherche-par-style.component';
 
 
 const routes: Routes = [{path: "plats" ,component:PlatsComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [{path: "plats" ,component:PlatsComponent},
 {path: "updatePlat/:id", component: UpdatePlatComponent},
 {path: 'login', component: LoginComponent},
 {path: 'forbidden', component : ForbiddenComponent},
+{path: 'rechercheParStyle', component : RechercheParStyleComponent},
 { path: "", redirectTo: "plats", pathMatch: "full" },
 
 

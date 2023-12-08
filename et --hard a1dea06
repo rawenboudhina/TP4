@@ -1,0 +1,17 @@
+[33me0eb3f9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: rebase (abort): returning to refs/heads/main
+[33ma1dea06[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: checkout: moving from main to a1dea06a25f0f69d8e289251239e30e4a949fd5b
+[33ma1dea06[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{2}: commit: devoir 8
+[33md9c8d09[m HEAD@{3}: rebase (continue): TP4 projet angular
+[33mfcd62ba[m HEAD@{4}: commit: devoir 6 Restaurant
+[33m1016126[m HEAD@{5}: commit: devoir 6-2 après modifications
+[33me0eb3f9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{6}: rebase (abort): returning to refs/heads/main
+[33me0eb3f9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{7}: rebase (abort): returning to refs/heads/main
+[33me0eb3f9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{8}: reset: moving to HEAD
+[33me0eb3f9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{9}: commit (merge): devoir 6 sur mon entité: restaurant
+[33m738e01f[m HEAD@{10}: reset: moving to HEAD
+[33m738e01f[m HEAD@{11}: commit: devoir 6
+[33m982d0a1[m HEAD@{12}: commit (amend): TP4 projet angular
+[33mc064ed3[m HEAD@{13}: commit: Ajout des répertoires manquants
+[33m34d61b7[m HEAD@{14}: commit: Mettre à jour les styles de fin de ligne
+[33m30a645f[m HEAD@{15}: Branch: renamed refs/heads/master to refs/heads/main
+[33m30a645f[m HEAD@{17}: commit (initial): initial commit

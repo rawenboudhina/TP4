@@ -9,6 +9,8 @@ export class AuthService {
   users: User[] = [
     { username: 'admin', password: '123', roles: ['ADMIN'] },
     { username: 'rawen', password: '123', roles: ['USER'] },
+    { username: 'ahmed', password: '123', roles: ['AGENT'] }
+
   ];
   public loggedUser!: string;
   public isloggedIn: Boolean = false;
@@ -37,6 +39,12 @@ export class AuthService {
     return (this.roles.indexOf('ADMIN') >-1);
 
     }
+    isAgent():Boolean{
+      if (!this.roles) //this.roles== undefiened
+      return false;
+      return (this.roles.indexOf('AGENT') >-1);
+  
+      }
     logout() {
       this.isloggedIn= false;
       this.loggedUser = undefined!;
